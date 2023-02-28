@@ -1,0 +1,102 @@
+.navbar{
+    padding: 0px 1rem;
+    background: #ccc;
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    font-size: 35px;
+}
+
+span{
+    color: blue;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    margin: 0 10px;
+}
+
+.nav-menu a{
+    color: #000;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.hamburger{
+    font-size: 30px;
+    color: blue;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-menu{
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        border-top: 1px solid blue;
+        background: #ccc;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li{
+        margin: 50px 0 0;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav{
+        height: 80px;
+    }
+
+    nav h1{
+        font-size: 20px;
+    }
+
+    .hamburger{
+        font-size: 20px;
+    }
+
+    nav button{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .nav-menu{
+        top: 80px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+}

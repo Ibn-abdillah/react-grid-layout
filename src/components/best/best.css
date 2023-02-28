@@ -1,0 +1,59 @@
+.best{
+    padding: 3rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.best h2{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.choose{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 20px auto 30px;
+}
+
+.image{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.best button{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .choose{
+        max-width: 100%;
+    }
+    .image{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .best{
+        padding: 3rem 1rem;
+    }
+
+    .best h2{
+        font-size: 20px;
+    }
+
+    .choose{
+        font-size: 13px;
+    }
+}
+
+
+
+
