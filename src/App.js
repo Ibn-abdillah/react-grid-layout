@@ -1,5 +1,4 @@
 
-import './App.css';
 import Best from './components/best/best';
 import Footer from './components/footer/footer';
 import Home from './components/home/home';
