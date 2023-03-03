@@ -65,7 +65,7 @@ label{
     cursor: pointer;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     .home {
         padding: 1.5rem;
     }
