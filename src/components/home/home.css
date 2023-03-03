@@ -69,9 +69,10 @@ label{
     .home {
         padding: 1.5rem;
     }
-    
+
     .home h1{
         font-size: 28px;
+        font-style: italic;
     }
 
     .home p{
